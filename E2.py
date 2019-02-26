@@ -13,8 +13,7 @@ def Diccionario_(unsort):
                 trocado +=1
 # Se recorre el string eliminando elementos repetidos
     string_car=''
-    if(string[0]!=string[1]):
-        string_car += string[0]
+    string_car += string[0]
     for i in range(len(string)-1):
         if(string[i]!=string[i+1]):
             string_car += string[i+1]   
@@ -30,8 +29,6 @@ def Diccionario_(unsort):
         string_veces += str(x) 
         diccionario.update({string_car[i]:str(x)})
         x=0
-    print(string_car)
-    print(string_veces)
     return diccionario    
 unsort = input('Introduce una cadena de nùmeros: ')
 Diccionario_(unsort)
